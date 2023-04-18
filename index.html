@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Notifications page</title>
+  <link rel="stylesheet" href="dist/output.css" />
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="bg-slate-100 leading-5 tracking-tight text-slate-600">
+  <main class="mx-auto max-w-2xl rounded-lg bg-white p-3 sm:mt-16 sm:mb-16 sm:p-8">
+    <header class="flex items-center">
+      <div class="text-xl font-bold text-slate-900">
+        <span class="">Notifications</span>
+        <span class="ml-2 rounded-md bg-blue-900 px-2 text-white">3</span>
+      </div>
+      <button class="ml-auto cursor-pointer text-sm hover:text-blue-900">
+        Mark all as read
+      </button>
+    </header>
+
+    <div class="mt-5">
+      <section id="new-notifications">
+        <div class="mb-3 flex rounded-lg bg-slate-100 p-4">
+          <img class="mr-2 h-11 w-11" src="assets/images/avatar-mark-webber.webp" alt="profile-picture" />
+          <div>
+            <a class="cursor-pointer font-bold text-slate-900 hover:text-blue-900">Mark Webber</a>
+            reacted to your recent post
+            <a class="cursor-pointer font-semibold hover:text-blue-900">My first tournament today!</a>
+            <span class="inline-block h-2 w-2 rounded-full bg-red-500"></span>
+            <div class="date text-slate-500">1m ago</div>
+          </div>
+        </div>
+
+        <div class="mb-3 flex rounded-lg bg-slate-100 p-4">
+          <img class="mr-2 h-11 w-11" src="assets/images/avatar-angela-gray.webp" alt="profile-picture" />
+          <div>
+            <a class="cursor-pointer font-bold text-slate-900 hover:text-blue-900">Angela Gray</a>
+            followed you
+            <span class="inline-block h-2 w-2 rounded-full bg-red-500"></span>
+            <div class="date text-slate-500">5m ago</div>
+          </div>
+        </div>
+
+        <div class="mb-3 flex rounded-lg bg-slate-100 p-4">
+          <img class="mr-2 h-11 w-11" src="assets/images/avatar-jacob-thompson.webp" alt="profile-picture" />
+          <div>
+            <a class="cursor-pointer font-bold text-slate-900 hover:text-blue-900">Jacob Thompson</a>
+            has joined your group
+            <a class="cursor-pointer font-bold text-blue-900">Chess Club</a>
+            <span class="inline-block h-2 w-2 rounded-full bg-red-500"></span>
+            <div class="date text-slate-500">1 day ago</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="old-notifications">
+        <div class="mb-3 flex rounded-lg p-4">
+          <img class="mr-2 h-11 w-11" src="assets/images/avatar-rizky-hasanuddin.webp" alt="profile-picture" />
+          <div>
+            <a class="cursor-pointer font-bold text-slate-900 hover:text-blue-900">Rizky Hasanuddin</a>
+            sent you a private message
+            <div class="date text-slate-500">5 days ago</div>
+            <div class="text mt-3 cursor-pointer rounded-md border p-3 hover:bg-blue-50">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3 flex rounded-lg p-4">
+          <img class="mr-2 h-11 w-11" src="assets/images/avatar-kimberly-smith.webp" alt="profile-picture" />
+          <div>
+            <a class="cursor-pointer font-bold text-slate-900 hover:text-blue-900">Kimberly Smith</a>
+            commented on your picture
+            <div class="date text-slate-500">1 week ago</div>
+          </div>
+          <img class="ml-auto h-11 w-11 cursor-pointer" src="assets/images/image-chess.webp" alt="" />
+        </div>
+
+        <div class="mb-3 flex rounded-lg p-4">
+          <img class="mr-2 h-11 w-11" src="assets/images/avatar-nathan-peterson.webp" alt="profile-picture" />
+          <div>
+            <a class="cursor-pointer font-bold text-slate-900 hover:text-blue-900">Nathan Peterson</a>
+            reacted to your recent post
+            <a class="cursor-pointer font-semibold hover:text-blue-900">5 end-game strategies to increase your win
+              rate</a>
+            <div class="date text-slate-500">2 weeks ago</div>
+          </div>
+        </div>
+
+        <div class="mb-3 flex rounded-lg p-4">
+          <img class="mr-2 h-11 w-11" src="assets/images/avatar-anna-kim.webp" alt="profile-picture" />
+          <div>
+            <a class="cursor-pointer font-bold text-slate-900 hover:text-blue-900">Anna Kim</a>
+            left the group
+            <a class="cursor-pointer font-bold text-blue-900">Chess Club</a>
+            <div class="date text-slate-500">2 weeks ago</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+    <a href="https://github.com/Marcel267">Marcel Martinez Otano</a>.
+  </div>
+</body>
+
+</html>
