@@ -10,6 +10,7 @@
 
   <title>Frontend Mentor | Notifications page</title>
   <link rel="stylesheet" href="dist/output.css" />
+  <script defer src="index.js"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
@@ -28,9 +29,9 @@
     <header class="flex items-center">
       <div class="text-xl font-bold text-slate-900">
         <span class="">Notifications</span>
-        <span class="ml-2 rounded-md bg-blue-900 px-2 text-white">3</span>
+        <span id="notifications-counter" class="ml-2 rounded-md bg-blue-900 px-2 text-white">3</span>
       </div>
-      <button class="ml-auto cursor-pointer text-sm hover:text-blue-900">
+      <button id="toggle-notifications" class="ml-auto cursor-pointer text-sm hover:text-blue-900">
         Mark all as read
       </button>
     </header>
@@ -43,7 +44,7 @@
             <a class="cursor-pointer font-bold text-slate-900 hover:text-blue-900">Mark Webber</a>
             reacted to your recent post
             <a class="cursor-pointer font-semibold hover:text-blue-900">My first tournament today!</a>
-            <span class="inline-block h-2 w-2 rounded-full bg-red-500"></span>
+            <span class="dot inline-block h-2 w-2 rounded-full bg-red-500"></span>
             <div class="date text-slate-500">1m ago</div>
           </div>
         </div>
@@ -53,7 +54,7 @@
           <div>
             <a class="cursor-pointer font-bold text-slate-900 hover:text-blue-900">Angela Gray</a>
             followed you
-            <span class="inline-block h-2 w-2 rounded-full bg-red-500"></span>
+            <span class="dot inline-block h-2 w-2 rounded-full bg-red-500"></span>
             <div class="date text-slate-500">5m ago</div>
           </div>
         </div>
@@ -64,7 +65,7 @@
             <a class="cursor-pointer font-bold text-slate-900 hover:text-blue-900">Jacob Thompson</a>
             has joined your group
             <a class="cursor-pointer font-bold text-blue-900">Chess Club</a>
-            <span class="inline-block h-2 w-2 rounded-full bg-red-500"></span>
+            <span class="dot inline-block h-2 w-2 rounded-full bg-red-500"></span>
             <div class="date text-slate-500">1 day ago</div>
           </div>
         </div>
